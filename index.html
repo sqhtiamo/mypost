@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+        <title>hello world</title>
+    <body>
+        <input type="text" width="100%" id="input"/> 
+        <button onclick="search();">GO</button>
+        <div>
+	        <iframe id="iframe" src="http://www.baidu.com"></iframe>
+        </div>
+    </body>
+    <script type="text/javascript">
+    	function search () {
+    		alert(document.getElementById('iframe'))
+    		var url = document.getElementById('input').value;
+    		document.getElementById('iframe').src = url;
+
+    	}
+
+
+    </script>
+</html>
+
